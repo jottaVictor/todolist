@@ -1,0 +1,45 @@
+.pagination{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.pagination .back,
+.pagination .next{
+    position: absolute;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.pagination .back{
+    left: 0;
+}
+
+.pagination .next{
+    right: 0;
+}
+
+.pagination .pages{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+
+.pagination a{
+    text-decoration: none;
+    color: var(--offwhite);
+}
+
+.pagination span.current{
+    color: var(--green);
+}
+
+.pagination .next svg{
+    transform: rotate(180deg);
+}
